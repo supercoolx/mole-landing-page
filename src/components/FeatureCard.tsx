@@ -8,6 +8,7 @@ interface FeatureCardProps {
   color?: string;
   className?: string;
   iconClassName?: string;
+  image?: string;
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ 
@@ -16,13 +17,17 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
   color = 'bg-white',
   className = '',
-  iconClassName = ''
+  iconClassName = '',
+  image,
 }) => {
   return (
     <div className={cn(
-      `${color} p-6 rounded-2xl shadow-lg border-2 border-gray-200 hover:shadow-xl transition-all duration-300`,
+      `${color} relative p-6 rounded-2xl shadow-lg border-2 border-gray-200 hover:shadow-xl transition-all duration-300`,
       className
     )}>
+      <div className="absolute">
+        <img src={cn(`${image}`)} alt="" className="w-16" />
+      </div>
       <div className={cn("flex justify-center mb-4", iconClassName)}>
         {icon}
       </div>

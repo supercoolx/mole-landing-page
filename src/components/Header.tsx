@@ -26,14 +26,14 @@ const Header = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-md py-2"
+          ? "bg-[#945929]/70 backdrop-blur-md shadow-md py-2"
           : "bg-transparent py-4"
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-5">
-          <img src="/imgs/logo.png" alt="logo" className="w-20"/>
+          <img src="/imgs/logo.png" alt="logo" className="w-24"/>
         </Link>
 
         {/* Desktop Navigation */}

@@ -106,7 +106,7 @@ const Index = () => {
       percentage: "20%",
       timeline: "12 months cliff, 24 months linear vesting",
       description: "Core team members and advisors allocation",
-      color: "border-yellow-500"
+      color: "border-yellow-500",
     },
   ];
 
@@ -178,7 +178,7 @@ const Index = () => {
       )}
 
       {/* Hero Section - adjusted to account for fixed header */}
-      <section className="relative bg-gradient-to-b from-[#f1d8c4]  to-[#945929] py-20 overflow-hidden pt-40 pb-32">
+      <section className="relative bg-gradient-to-b from-[#f3d2b8]/50  to-[#f1d8c4] py-20 overflow-hidden pt-40 pb-32">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="md:w-1/2 text-center md:text-left">
@@ -412,32 +412,38 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
+              image="/imgs/mole1.png"
               icon={<Gamepad className="w-12 h-12 text-game-blue" />}
               title="In-Game Rewards"
               description="Earn $MOLE tokens by playing the game, completing daily missions, and smashing moles."
             />
             <FeatureCard
+              image="/imgs/mole2.png"
               icon={<ChartPie className="w-12 h-12 text-game-red" />}
               title="Prediction Markets"
               description="Use $MOLE tokens to participate in the MOLE Predictor markets and win more tokens."
               color="bg-white"
             />
             <FeatureCard
+              image="/imgs/mole3.png"
               icon={<TrendingUp className="w-12 h-12 text-game-green" />}
               title="Staking Rewards"
               description="Stake your $MOLE tokens to earn passive income and unlock premium game features."
             />
             <FeatureCard
+              image="/imgs/mole4.png"
               icon={<WalletCards className="w-12 h-12 text-game-yellow" />}
               title="Governance"
               description="Vote on game development decisions and ecosystem proposals using your $MOLE holdings."
             />
             <FeatureCard
+              image="/imgs/mole5.png"
               icon={<Trophy className="w-12 h-12 text-game-purple" />}
               title="Tournament Entry"
               description="Use $MOLE tokens to enter special tournaments with larger prize pools and rare rewards."
             />
             <FeatureCard
+              image="/imgs/mole6.png"
               icon={<Handshake className="w-12 h-12 text-black" />}
               title="TON Ecosystem Integration"
               description="Seamlessly interact with other TON ecosystem projects and services using $MOLE."
@@ -453,7 +459,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-center">
               Our Team
             </h2>
-            <img src="/imgs/ourteam.jpg" alt="" className="w-16 rounded-xl" />
+            {/* <img src="/imgs/ourteam.jpg" alt="" className="w-16 rounded-xl" /> */}
           </div>
 
           <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -540,8 +546,11 @@ const Index = () => {
       </section>
 
       {/* Game Features Section - Lower priority now */}
-      <section className="py-16 bg-[#f1d8c4]" id="features">
-        <div className="container mx-auto px-4">
+      <section className="bg-[#f1d8c4]" id="features">
+        <div className="">
+          <img src="/imgs/back3.png" alt="" className="w-screen" />
+        </div>
+        <div className="container mx-auto px-4 py-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Game Features
           </h2>
