@@ -59,22 +59,22 @@ const Index = () => {
     {
       name: "Alex Johnson",
       role: "Founder & Game Designer",
-      image: "/placeholder.svg",
+      image: "/imgs/avar1.jpg",
     },
     {
       name: "Maria Chen",
       role: "Lead Developer",
-      image: "/placeholder.svg",
+      image: "/imgs/avar5.jpg",
     },
     {
       name: "David Kim",
       role: "Blockchain Specialist",
-      image: "/placeholder.svg",
+      image: "/imgs/avar3.jpg",
     },
     {
       name: "Sarah Williams",
       role: "Marketing Lead",
-      image: "/placeholder.svg",
+      image: "/imgs/avar6.jpg",
     },
   ];
 
@@ -114,22 +114,42 @@ const Index = () => {
   const partners: Partner[] = [
     {
       name: "Crypto Ventures",
-      logo: "/placeholder.svg",
+      logo: "/imgs/avar8.jpg",
       type: "VC",
     },
     {
       name: "GameFi Capital",
-      logo: "/placeholder.svg",
+      logo: "/imgs/avar5.jpg",
+      type: "VC",
+    },
+    {
+      name: "Crypto Ventures",
+      logo: "/imgs/avar10.jpg",
+      type: "VC",
+    },
+    {
+      name: "GameFi Capital",
+      logo: "/imgs/avar4.jpg",
       type: "VC",
     },
     {
       name: "Telegram Games",
-      logo: "/placeholder.svg",
+      logo: "/imgs/avar10.jpg",
       type: "Partner",
     },
     {
       name: "Blockchain Alliance",
-      logo: "/placeholder.svg",
+      logo: "/imgs/avar10.jpg",
+      type: "Partner",
+    },
+    {
+      name: "Telegram Games",
+      logo: "/imgs/avar11.jpg",
+      type: "Partner",
+    },
+    {
+      name: "Blockchain Alliance",
+      logo: "/imgs/avar4.jpg",
       type: "Partner",
     },
   ];
@@ -512,7 +532,7 @@ const Index = () => {
                     <img
                       src={partner.logo}
                       alt={partner.name}
-                      className="w-24 h-24 object-contain mb-4"
+                      className="w-24 h-24   mb-4 rounded-full"
                     />
                     <h4 className="font-bold text-center">{partner.name}</h4>
                   </div>
@@ -535,7 +555,7 @@ const Index = () => {
                     <img
                       src={partner.logo}
                       alt={partner.name}
-                      className="w-24 h-24 object-contain mb-4"
+                      className="w-24 h-24 mb-4 rounded-full"
                     />
                     <h4 className="font-bold text-center">{partner.name}</h4>
                   </div>
@@ -543,12 +563,17 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>  
 
       {/* Game Features Section - Lower priority now */}
       <section className="bg-[#f1d8c4]" id="features">
-        <div className="">
-          <img src="/imgs/back3.png" alt="" className="w-screen" />
+        <div className="grid grid-cols-3 gap-20 px-20 pt-20">
+          <img src="/imgs/1.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
+          <img src="/imgs/2.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
+          <img src="/imgs/3.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
+          <img src="/imgs/4.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
+          <img src="/imgs/5.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
+          <img src="/imgs/6.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
         </div>
         <div className="container mx-auto px-4 py-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
@@ -741,7 +766,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-full border-white/20 text-white hover:bg-white/20"
+                  className="rounded-full border-white/20 text-white bg-white/10"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -756,7 +781,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-full border-white/20 text-white hover:bg-white/20"
+                  className="rounded-full border-white/20 text-white bg-white/10"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -771,7 +796,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-full border-white/20 text-white hover:bg-white/20"
+                  className="rounded-full border-white/20 text-white bg-white/10"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -786,7 +811,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-full border-white/20 text-white hover:bg-white/20"
+                  className="rounded-full border-white/20 text-white bg-white/10"
                 >
                   <MessageCircle className="h-5 w-5" />
                 </Button>
