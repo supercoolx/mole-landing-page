@@ -98,6 +98,10 @@ export default {
                 'mole-pop': 'mole-pop 0.5s ease-out',
                 'hammer-swing': 'hammer-swing 0.5s ease-in-out',
                 'float': 'float 3s ease-in-out infinite'
+			},
+			screens: {
+				xm: '960px', // 👈 Custom breakpoint
+				xs: '480px', // 👈 Custom breakpoint
 			}
 		}
 	},
