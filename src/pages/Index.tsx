@@ -57,24 +57,19 @@ const Index = () => {
   // Team members data
   const teamMembers: TeamMember[] = [
     {
-      name: "Alex Johnson",
-      role: "Founder & Game Designer",
-      image: "/imgs/avar1.jpg",
+      name: "John Garner",
+      role: "CTO - SoftSix | Cake",
+      image: "/imgs/John_Garner.jpg",
     },
     {
-      name: "Maria Chen",
-      role: "Lead Developer",
-      image: "/imgs/avar5.jpg",
+      name: "Tom Gilbert",
+      role: "CMO - Alpha Blockchain | Cake",
+      image: "/imgs/Tom_Gilbert.jpg",
     },
     {
-      name: "David Kim",
-      role: "Blockchain Specialist",
-      image: "/imgs/avar3.jpg",
-    },
-    {
-      name: "Sarah Williams",
-      role: "Marketing Lead",
-      image: "/imgs/avar6.jpg",
+      name: "TRAN TUAN",
+      role: "CEO - CJD Tech | Cake",
+      image: "/imgs/TRAN_TUAN.jpg",
     },
   ];
 
@@ -352,25 +347,22 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="mt-12 mx-auto bg-white/90 p-6 rounded-2xl">
-            <h3 className="text-3xl font-bold mb-4 text-center">
-              Token Allocation Overview
+          <div className="mt-20 mx-auto bg-white/90 p-10 rounded-2xl">
+            <h3 className="text-4xl font-bold mb-8 text-center">
+              Tokenomics
             </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="bg-game-blue text-white px-4 py-2 rounded-full">
-                Gameplay Rewards: 30%
+            <div className="flex flex-wrap items-center justify-center gap-10 text-xl">
+              <div className="bg-game-blue text-white px-4 py-4 rounded-full">
+                Gameplay Rewards: 60%
               </div>
-              <div className="bg-game-red text-white px-4 py-2 rounded-full">
-                Team & Advisors: 20%
+              <div className="bg-game-red text-white px-4 py-4 rounded-full">
+                Community Incentives: 15%
               </div>
-              <div className="bg-game-green text-white px-4 py-2 rounded-full">
-                Public Sale: 10%
+              <div className="bg-game-green text-white px-4 py-4 rounded-full">
+                Development Fund: 15% 
               </div>
-              <div className="bg-game-yellow text-black px-4 py-2 rounded-full">
-                Private Sale: 25%
-              </div>
-              <div className="bg-game-purple text-white px-4 py-2 rounded-full">
-                Ecosystem Growth: 15%
+              <div className="bg-game-yellow text-black px-4 py-4 rounded-full">
+                Liquidity & Exchange Listings: 10%
               </div>
             </div>
           </div>
@@ -486,7 +478,7 @@ const Index = () => {
             Meet the talented individuals behind MoleSmash
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -583,29 +575,30 @@ const Index = () => {
             Earn $MOLE tokens while enjoying these exciting game features
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FeatureCard
               icon={<Trophy className="w-12 h-12 text-game-yellow" />}
-              title="Global Leaderboards"
-              description="Compete with players worldwide and earn $MOLE tokens by climbing to the top."
+              title="Dynamic Levels"
+              description="Players progress through increasingly challenging stages with unique mole behaviors."
             />
             <FeatureCard
               icon={<Gamepad className="w-12 h-12 text-game-blue" />}
-              title="Simple Gameplay"
-              description="Tap to smash moles right inside Telegram - earn tokens with every successful hit!"
+              title="Power-Ups"
+              description="Special items appear during gameplay, providing advantages to players."
               color="bg-white"
             />
             <FeatureCard
               icon={<Rocket className="w-12 h-12 text-game-red" />}
-              title="Daily Missions"
-              description="Complete daily tasks to earn bonus $MOLE tokens and special rewards."
+              title="Leaderboards"
+              description=" Weekly and monthly leaderboards keep the competition fierce and engaging. "
             />
             <FeatureCard
               icon={<Award className="w-12 h-12 text-game-green" />}
-              title="The Huddle"
-              description="Join our community events to earn double points and exclusive token rewards."
+              title="Customizable Themes"
+              description="Players can unlock and personalize their gaming environments. 
+"
             />
-            <FeatureCard
+            {/* <FeatureCard
               icon={<ChartPie className="w-12 h-12 text-game-purple" />}
               title="MOLE Predictor"
               description="Use your tokens in our prediction market to multiply your holdings."
@@ -614,7 +607,7 @@ const Index = () => {
               icon={<MessageCircle className="w-12 h-12 text-black" />}
               title="Referral System"
               description="Invite friends to earn a percentage of their $MOLE token earnings forever."
-            />
+            /> */}
           </div>
         </div>
       </section>
