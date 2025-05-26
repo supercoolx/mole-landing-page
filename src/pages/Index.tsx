@@ -29,6 +29,7 @@ interface TeamMember {
   name: string;
   role: string;
   image: string;
+  href: string;
 }
 
 // Vesting schedule type
@@ -57,24 +58,22 @@ const Index = () => {
   // Team members data
   const teamMembers: TeamMember[] = [
     {
-      name: "Alex Johnson",
-      role: "Founder & Game Designer",
-      image: "/imgs/avar1.jpg",
+      name: "John Garner",
+      role: "CTO - SoftSix | Cake",
+      image: "/imgs/John_Garner.jpg",
+      href: "https://www.cake.me/me/john-garner",
     },
     {
-      name: "Maria Chen",
-      role: "Lead Developer",
-      image: "/imgs/avar5.jpg",
+      name: "Tom Gilbert",
+      role: "CMO - Alpha Blockchain | Cake",
+      image: "/imgs/Tom_Gilbert.jpg",
+      href: "https://www.cake.me/me/tom-gilbert",
     },
     {
-      name: "David Kim",
-      role: "Blockchain Specialist",
-      image: "/imgs/avar3.jpg",
-    },
-    {
-      name: "Sarah Williams",
-      role: "Marketing Lead",
-      image: "/imgs/avar6.jpg",
+      name: "TRAN TUAN",
+      role: "CEO - CJD Tech | Cake",
+      image: "/imgs/TRAN_TUAN.jpg",
+      href: "https://www.cake.me/me/tran-tuan-3be3fe",
     },
   ];
 
@@ -198,14 +197,14 @@ const Index = () => {
       )}
 
       {/* Hero Section - adjusted to account for fixed header */}
-      <section className="relative bg-gradient-to-b from-[#f3d2b8]/50  to-[#f1d8c4] py-20 overflow-hidden pt-40 pb-32">
+      <section className="relative bg-gradient-to-b from-[#f3d2b8]/50 to-[#f1d8c4] overflow-hidden pt-28 sm:pt-40 pb-12 sm:pb-32">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="md:w-1/2 text-center md:text-left">
+          <div className="flex flex-col xm:flex-row items-center justify-between gap-8">
+            <div className="w-3/4 xm:w-1/2 text-center xm:text-left">
               <div className="flex items-center mb-4 justify-center md:justify-start">
                 <Coins className="w-8 h-8 text-game-blue mr-2" />
                 <span className="bg-game-blue text-white py-1 px-3 rounded-full text-sm">
-                  Built on TON Network
+                  Built on Binance Network
                 </span>
               </div>
               <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-game-blue drop-shadow-md">
@@ -213,8 +212,8 @@ const Index = () => {
                 <span className="text-game-red">SMASH</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 font-medium">
-                The TON ecosystem's leading Tap-to-Earn token with integrated
-                prediction markets and daily rewards.
+                The Binance ecosystem's leading Tap-to-Earn token with
+                integrated prediction markets and daily rewards.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <GameButton
@@ -235,8 +234,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="md:w-1/2 relative h-[200px] md:h-[300px]">
-              <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-4 lg:gap-8">
+            <div className="w-3/4 xm:w-1/2 relative h-[200px] xs:h-[300px]">
+              <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1 xs:gap-4 lg:gap-8">
                 {[0, 1, 2, 3, 4, 5].map((index) => (
                   <div key={index} className="relative">
                     <div className="absolute bottom-0 left-2 lg:left-4 right-2 lg:right-4">
@@ -280,12 +279,12 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             $MOLE Token Metrics
           </h2>
-          <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            The native utility token powering the MoleSmash ecosystem on TON
+          <p className="text-xl text-center text-gray-600 mb-12 lg:max-w-3xl mx-auto">
+            The native utility token powering the MoleSmash ecosystem on Binance
             Network
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 items-center">
-            <div className="bg-white p-6 rounded-2xl py-10 shadow-lg border-2 border-game-blue">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 items-center xs:mx-20 md:mx-20 lg:mx-auto">
+            <div className="bg-white p-3 sm:p-6 rounded-2xl py-10 shadow-lg border-2 border-game-blue">
               <div className="flex justify-center mb-4">
                 <Coins className="w-12 h-12 text-game-blue" />
               </div>
@@ -302,7 +301,7 @@ const Index = () => {
               <img src="/imgs/molemoney.png" alt="" className="" />
             </div>
 
-            <div className="bg-white p-6 rounded-2xl py-10 shadow-lg border-2 border-game-red">
+            <div className="bg-white p-3 sm:p-6 rounded-2xl py-10 shadow-lg border-2 border-game-red">
               <div className="flex justify-center mb-4">
                 <TrendingUp className="w-12 h-12 text-game-red" />
               </div>
@@ -319,15 +318,15 @@ const Index = () => {
               <img src="/imgs/molecom.png" alt="" className="" />
             </div>
 
-            <div className="bg-white p-6 rounded-2xl py-10 shadow-lg border-2 border-game-green">
+            <div className="bg-white p-3 sm:p-6 rounded-2xl py-10 shadow-lg border-2 border-game-green">
               <div className="flex justify-center mb-4">
                 <Wallet className="w-12 h-12 text-game-green" />
               </div>
               <h3 className="text-xl font-bold mb-2 text-center">Token Type</h3>
               <p className="text-3xl font-bold text-center text-game-green">
-                TON-20
+                BNB
               </p>
-              <p className="text-gray-600 text-center">Native TON Ecosystem</p>
+              <p className="text-gray-600 text-center">Binance Native Token</p>
             </div>
 
             <div className="">
@@ -352,25 +351,22 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="mt-12 mx-auto bg-white/90 p-6 rounded-2xl">
-            <h3 className="text-3xl font-bold mb-4 text-center">
-              Token Allocation Overview
+          <div className="mt-20 mx-auto bg-white/90 p-10 rounded-2xl">
+            <h3 className="text-2xl sm:text-4xl font-bold mb-8 text-center">
+              Token Allocation Categories
             </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="bg-game-blue text-white px-4 py-2 rounded-full">
-                Gameplay Rewards: 30%
+            <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-[15px] sm:text-[18px] ">
+              <div className="bg-game-blue text-white px-4 py-4 rounded-full">
+                Gameplay Rewards: 60%
               </div>
-              <div className="bg-game-red text-white px-4 py-2 rounded-full">
-                Team & Advisors: 20%
+              <div className="bg-game-red text-white px-4 py-4 rounded-full">
+                Community Incentives: 15%
               </div>
-              <div className="bg-game-green text-white px-4 py-2 rounded-full">
-                Public Sale: 10%
+              <div className="bg-game-green text-white px-4 py-4 rounded-full">
+                Development Fund: 15%
               </div>
-              <div className="bg-game-yellow text-black px-4 py-2 rounded-full">
-                Private Sale: 25%
-              </div>
-              <div className="bg-game-purple text-white px-4 py-2 rounded-full">
-                Ecosystem Growth: 15%
+              <div className="bg-game-yellow text-black px-4 py-4 rounded-full">
+                Liquidity & Exchange Listings: 10%
               </div>
             </div>
           </div>
@@ -465,8 +461,8 @@ const Index = () => {
             <FeatureCard
               image="/imgs/mole6.png"
               icon={<Handshake className="w-12 h-12 text-black" />}
-              title="TON Ecosystem Integration"
-              description="Seamlessly interact with other TON ecosystem projects and services using $MOLE."
+              title="Binance Ecosystem Integration"
+              description="Seamlessly interact with other Binance ecosystem projects and services using $MOLE."
             />
           </div>
         </div>
@@ -486,22 +482,24 @@ const Index = () => {
             Meet the talented individuals behind MoleSmash
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-all duration-300"
-              >
-                <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 bg-gray-200">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
+              <a href={member.href} target="_blank" className="">
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 bg-gray-200">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                  <p className="text-game-blue">{member.role}</p>
                 </div>
-                <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                <p className="text-game-blue">{member.role}</p>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -521,7 +519,27 @@ const Index = () => {
             <h3 className="text-2xl font-bold mb-8 text-center">
               Venture Capital Partners
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-8">
+              {teamMembers.map((member, index) => (
+                <a href={member.href} target="_blank" className="">
+                  <div
+                    key={index}
+                    className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-all duration-300"
+                  >
+                    <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 bg-gray-200">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                    <p className="text-game-blue">{member.role}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
+            {/* <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-8">
               {partners
                 .filter((p) => p.type === "VC")
                 .map((partner, index) => (
@@ -537,14 +555,34 @@ const Index = () => {
                     <h4 className="font-bold text-center">{partner.name}</h4>
                   </div>
                 ))}
-            </div>
+            </div> */}
           </div>
 
           <div>
             <h3 className="text-2xl font-bold mb-8 text-center">
               Strategic Partners
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-8">
+              {teamMembers.map((member, index) => (
+                <a href={member.href} target="_blank" className="">
+                  <div
+                    key={index}
+                    className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-all duration-300"
+                  >
+                    <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 bg-gray-200">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                    <p className="text-game-blue">{member.role}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
+            {/* <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-8">
               {partners
                 .filter((p) => p.type === "Partner")
                 .map((partner, index) => (
@@ -560,20 +598,44 @@ const Index = () => {
                     <h4 className="font-bold text-center">{partner.name}</h4>
                   </div>
                 ))}
-            </div>
+            </div> */}
           </div>
         </div>
-      </section>  
+      </section>
 
       {/* Game Features Section - Lower priority now */}
       <section className="bg-[#f1d8c4]" id="features">
-        <div className="grid grid-cols-3 gap-20 px-20 pt-20">
-          <img src="/imgs/1.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
-          <img src="/imgs/2.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
-          <img src="/imgs/3.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
-          <img src="/imgs/4.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
-          <img src="/imgs/5.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
-          <img src="/imgs/6.jpg" alt="" className="rounded-xl w-[90%] h-[90%]" />
+        <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-12 xm:gap-20 px-8 sm:px-12 md:px-20 pt-8 sm:pt-12 md:pt-20">
+          <img
+            src="/imgs/1.jpg"
+            alt=""
+            className="rounded-xl w-[90%] h-[90%]"
+          />
+          <img
+            src="/imgs/2.jpg"
+            alt=""
+            className="rounded-xl w-[90%] h-[90%]"
+          />
+          <img
+            src="/imgs/3.jpg"
+            alt=""
+            className="rounded-xl w-[90%] h-[90%]"
+          />
+          <img
+            src="/imgs/4.jpg"
+            alt=""
+            className="rounded-xl w-[90%] h-[90%]"
+          />
+          <img
+            src="/imgs/5.jpg"
+            alt=""
+            className="rounded-xl w-[90%] h-[90%]"
+          />
+          <img
+            src="/imgs/6.jpg"
+            alt=""
+            className="rounded-xl w-[90%] h-[90%]"
+          />
         </div>
         <div className="container mx-auto px-4 py-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
@@ -583,29 +645,30 @@ const Index = () => {
             Earn $MOLE tokens while enjoying these exciting game features
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FeatureCard
               icon={<Trophy className="w-12 h-12 text-game-yellow" />}
-              title="Global Leaderboards"
-              description="Compete with players worldwide and earn $MOLE tokens by climbing to the top."
+              title="Dynamic Levels"
+              description="Players progress through increasingly challenging stages with unique mole behaviors."
             />
             <FeatureCard
               icon={<Gamepad className="w-12 h-12 text-game-blue" />}
-              title="Simple Gameplay"
-              description="Tap to smash moles right inside Telegram - earn tokens with every successful hit!"
+              title="Power-Ups"
+              description="Special items appear during gameplay, providing advantages to players."
               color="bg-white"
             />
             <FeatureCard
               icon={<Rocket className="w-12 h-12 text-game-red" />}
-              title="Daily Missions"
-              description="Complete daily tasks to earn bonus $MOLE tokens and special rewards."
+              title="Leaderboards"
+              description=" Weekly and monthly leaderboards keep the competition fierce and engaging. "
             />
             <FeatureCard
               icon={<Award className="w-12 h-12 text-game-green" />}
-              title="The Huddle"
-              description="Join our community events to earn double points and exclusive token rewards."
+              title="Customizable Themes"
+              description="Players can unlock and personalize their gaming environments. 
+"
             />
-            <FeatureCard
+            {/* <FeatureCard
               icon={<ChartPie className="w-12 h-12 text-game-purple" />}
               title="MOLE Predictor"
               description="Use your tokens in our prediction market to multiply your holdings."
@@ -614,7 +677,7 @@ const Index = () => {
               icon={<MessageCircle className="w-12 h-12 text-black" />}
               title="Referral System"
               description="Invite friends to earn a percentage of their $MOLE token earnings forever."
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -627,10 +690,10 @@ const Index = () => {
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join thousands of players already smashing moles and earning $MOLE
-            tokens on TON Network!
+            tokens on Binance Network!
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col xl:flex-row gap-6 justify-center mx-6 xs:mx-20 sm:mx-40 xl:mx-auto">
             <GameButton
               size="xl"
               color="primary"
@@ -644,7 +707,7 @@ const Index = () => {
             </GameButton>
           </div>
 
-          <div className="mt-12 flex flex-col md:flex-row justify-center gap-6">
+          <div className="mt-12 flex flex-col items-center xl:flex-row justify-center gap-6">
             <div className="flex items-center">
               <Star className="text-game-yellow fill-game-yellow h-6 w-6 mr-1" />
               <Star className="text-game-yellow fill-game-yellow h-6 w-6 mr-1" />
@@ -654,13 +717,13 @@ const Index = () => {
               <span className="ml-2 font-bold">4.8/5</span>
               <span className="ml-2 text-gray-500">(1,243 Reviews)</span>
             </div>
-            <span className="hidden md:block text-gray-500">|</span>
+            <span className="hidden xl:block text-gray-500">|</span>
             <div className="flex items-center">
               <Users className="h-6 w-6 mr-2 text-game-blue" />
               <span className="font-bold">50K+</span>
               <span className="ml-2">Active Users</span>
             </div>
-            <span className="hidden md:block text-gray-500">|</span>
+            <span className="hidden xl:block text-gray-500">|</span>
             <div className="flex items-center">
               <Trophy className="h-6 w-6 mr-2 text-game-yellow" />
               <span className="font-bold">$150K+</span>
@@ -672,7 +735,7 @@ const Index = () => {
             <img
               src="/imgs/molefriend.png"
               alt=""
-              className="absolute -bottom-10 -right-10 w-80"
+              className="absolute -bottom-10 -right-20 hidden xs:block w-56 sm:w-64 xl:w-80"
             />
           </div>
         </div>
@@ -690,7 +753,7 @@ const Index = () => {
               </h2>
             </div>
 
-            <div className="flex gap-4 mb-4 md:mb-0">
+            <div className="flex flex-col xs:flex-row gap-2 xs:gap-4 mb-4 md:mb-0">
               <Button
                 variant="ghost"
                 className="text-white hover:text-white hover:bg-white/20"
@@ -722,7 +785,7 @@ const Index = () => {
             <div>
               <h3 className="font-bold mb-4">About MoleSmash</h3>
               <p className="text-sm text-gray-300">
-                MoleSmash is a TON ecosystem-based crypto-game that combines
+                MoleSmash is a Binance ecosystem-based crypto-game that combines
                 tap-to-earn gameplay with tokenized rewards. Built on The Open
                 Network with a focus on prediction markets and community
                 engagement.

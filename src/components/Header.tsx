@@ -33,7 +33,7 @@ const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-5">
-          <img src="/imgs/logo.png" alt="logo" className="w-24"/>
+          <img src="/imgs/logo.png" alt="logo" className="w-16 xs:w-20 md:w-24"/>
         </Link>
 
         {/* Desktop Navigation */}
